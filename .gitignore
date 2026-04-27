@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.env
+.env.local
+*.local
+
+# Wrangler state
+.wrangler/
+
+# Build outputs
+worker/dist/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db

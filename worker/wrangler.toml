@@ -1,0 +1,20 @@
+name = "shiny-sun-30c9"
+main = "src/index.ts"
+compatibility_date = "2024-12-05"
+compatibility_flags = ["nodejs_compat"]
+account_id = "6279725f0b0d39550b6fbf31fe073b3f"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "stratum-decisions"
+database_id = "REPLACE_WITH_YOUR_D1_ID"
+# Run `npm run db:list` to find your database_id
+
+[vars]
+ENVIRONMENT = "development"
+ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
+ALLOWED_ORIGINS = "http://localhost:5173,https://stratum-personal.pages.dev"
+
+# Secrets (set these with `wrangler secret put <NAME>`):
+# ANTHROPIC_API_KEY  — already set in Cloudflare Secrets Store
+# CLERK_SECRET_KEY   — get from clerk.com dashboard

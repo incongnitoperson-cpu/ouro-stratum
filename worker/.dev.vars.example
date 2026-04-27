@@ -1,0 +1,5 @@
+# Copy this to .dev.vars (never commit .dev.vars)
+ANTHROPIC_API_KEY=sk-ant-api03-YOUR_KEY_HERE
+CLERK_SECRET_KEY=sk_test_YOUR_KEY_HERE
+ANTHROPIC_MODEL=claude-haiku-4-5-20251001
+ALLOWED_ORIGINS=http://localhost:5173,https://stratum-personal.pages.dev
