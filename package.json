@@ -3,11 +3,27 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "dev:worker": "cd worker && npm run dev",
-    "dev:frontend": "cd frontend && npm run dev",
-    "deploy:worker": "cd worker && npm run deploy",
-    "deploy:frontend": "cd frontend && npm run deploy",
-    "db:migrate": "cd worker && npm run db:migrate",
-    "db:migrate:local": "cd worker && npm run db:migrate:local"
+    "deploy:worker": "cd worker && npm run deploy"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@clerk/nextjs": "^6.0.0",
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.8.0"
   }
 }
